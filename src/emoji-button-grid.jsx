@@ -24,6 +24,7 @@ export default function EmojiButtonGrid() {
 	const emojiButtons = [
 		{ emoji: "🐍", label: "Python 3.13.0", url: 'https://python-3-13.starttutorial.com/' },
 		{ emoji: "🐬", label: "MySQL 8.4", url: 'https://mysql-8-4.starttutorial.com/' },
+		{ emoji: "🟨", label: "JavaScript 2023", url: 'https://javascript-2023.starttutorial.com/' },
 	]
 
 	const filteredButtons = emojiButtons.filter((button) =>
