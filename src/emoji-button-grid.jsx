@@ -22,8 +22,8 @@ export default function EmojiButtonGrid() {
 	const [searchTerm, setSearchTerm] = useState("")
 
 	const emojiButtons = [
-		{ emoji: "🐍", label: "Python 3.13.0", url: 'https://python-3-13-tutorial.pages.dev/' },
-		{ emoji: "🐬", label: "MySQL 8.4", url: 'https://mysql-8-4-tutorial.pages.dev/' },
+		{ emoji: "🐍", label: "Python 3.13.0", url: 'https://python-3-13.starttutorial.com/' },
+		{ emoji: "🐬", label: "MySQL 8.4", url: 'https://mysql-8-4.starttutorial.com/' },
 	]
 
 	const filteredButtons = emojiButtons.filter((button) =>
@@ -32,7 +32,7 @@ export default function EmojiButtonGrid() {
 
 	return (
 		<div className={styles.container}>
-			<h2 className={styles.title}>Tutorials</h2>
+			<h2 className={styles.title}>StartTutorial</h2>
 			<div className={styles.searchContainer}>
 				<input
 					type="text"
