@@ -32,7 +32,7 @@ export default function EmojiButtonGrid() {
 
 	return (
 		<div className={styles.container}>
-			<h2 className={styles.title}>StartTutorial</h2>
+			<h2 className={styles.title}>StartTutorial 📚</h2>
 			<div className={styles.searchContainer}>
 				<input
 					type="text"
