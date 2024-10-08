@@ -21,18 +21,8 @@ export default function EmojiButtonGrid() {
 	const [searchTerm, setSearchTerm] = useState("")
 
 	const emojiButtons = [
-		{ emoji: "😊", label: "Smile" },
-		{ emoji: "🚀", label: "Launch" },
-		{ emoji: "🎉", label: "Celebrate" },
-		{ emoji: "💡", label: "Idea" },
-		{ emoji: "🔥", label: "Hot" },
-		{ emoji: "🌈", label: "Rainbow" },
-		{ emoji: "🍕", label: "Pizza" },
-		{ emoji: "🎸", label: "Guitar" },
-		{ emoji: "📚", label: "Books" },
-		{ emoji: "🏆", label: "Trophy" },
-		{ emoji: "🌺", label: "Flower" },
-		{ emoji: "🐱", label: "Cat" },
+		{ emoji: "🐍", label: "Python 3.13.0" },
+		{ emoji: "🐬", label: "MySQL 8.4" },
 	]
 
 	const filteredButtons = emojiButtons.filter((button) =>
@@ -41,11 +31,11 @@ export default function EmojiButtonGrid() {
 
 	return (
 		<div className={styles.container}>
-			<h2 className={styles.title}>Emoji Button Grid</h2>
+			<h2 className={styles.title}>Tutorials</h2>
 			<div className={styles.searchContainer}>
 				<input
 					type="text"
-					placeholder="Search emojis..."
+					placeholder="Search tutorials..."
 					value={searchTerm}
 					onChange={(e) => setSearchTerm(e.target.value)}
 					className={styles.searchInput}
@@ -64,7 +54,7 @@ export default function EmojiButtonGrid() {
 					))}
 				</div>
 			) : (
-				<p className={styles.noResults}>No emojis found matching your search.</p>
+				<p className={styles.noResults}>No tutorials found matching your search.</p>
 			)}
 		</div>
 	)
