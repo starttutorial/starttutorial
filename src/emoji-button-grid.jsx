@@ -2,16 +2,16 @@ import { useState } from "react"
 import { SearchIcon } from "lucide-react"
 import styles from "./EmojiButtonGrid.module.css"
 
-function EmojiButton({ emoji, label, onClick }) {
+function EmojiButton({ emoji, label, url }) {
 	return (
 		<div className={styles.emojiButton}>
-			<button
+			<a
 				className={styles.emojiButtonIcon}
-				onClick={onClick}
 				aria-label={label}
+				href={url}
 			>
 				{emoji}
-			</button>
+			</a>
 			<span className={styles.emojiButtonLabel}>{label}</span>
 		</div>
 	)
@@ -21,8 +21,8 @@ export default function EmojiButtonGrid() {
 	const [searchTerm, setSearchTerm] = useState("")
 
 	const emojiButtons = [
-		{ emoji: "🐍", label: "Python 3.13.0" },
-		{ emoji: "🐬", label: "MySQL 8.4" },
+		{ emoji: "🐍", label: "Python 3.13.0", url: 'https://python-3-13-tutorial.pages.dev/' },
+		{ emoji: "🐬", label: "MySQL 8.4", url: 'https://mysql-8-4-tutorial.pages.dev/' },
 	]
 
 	const filteredButtons = emojiButtons.filter((button) =>
@@ -49,7 +49,7 @@ export default function EmojiButtonGrid() {
 							key={index}
 							emoji={button.emoji}
 							label={button.label}
-							onClick={() => console.log(`Clicked: ${button.label}`)}
+							url={button.url}
 						/>
 					))}
 				</div>
