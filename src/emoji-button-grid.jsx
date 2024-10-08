@@ -9,6 +9,7 @@ function EmojiButton({ emoji, label, url }) {
 				className={styles.emojiButtonIcon}
 				aria-label={label}
 				href={url}
+				target="_blank"
 			>
 				{emoji}
 			</a>
