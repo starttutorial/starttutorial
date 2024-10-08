@@ -113,3 +113,12 @@
 	display: block;
 	margin: 0 auto;
 }
+
+.header {
+	height: 400px;
+	margin-top: calc(50vh - 400px);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

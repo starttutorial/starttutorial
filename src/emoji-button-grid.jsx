@@ -33,19 +33,21 @@ export default function EmojiButtonGrid() {
 
 	return (
 		<div className={styles.container}>
-			<img src="/starttutorial.svg" alt="StartTutorial logo" width="128" height="128" className={styles.logo} />
-			<h2 className={styles.title}>StartTutorial</h2>
-			<p className={styles.overview}>StartTutorial is AI-generated tutorial platform. Start with your favorite tutorial! 😄</p>
-			<div className={styles.searchContainer}>
-				<input
-					type="text"
-					placeholder="Search tutorials..."
-					value={searchTerm}
-					onChange={(e) => setSearchTerm(e.target.value)}
-					className={styles.searchInput}
-				/>
-				<SearchIcon className={styles.searchIcon} size={20} />
-			</div>
+			<header className={styles.header}>
+				<img src="/starttutorial.svg" alt="StartTutorial logo" width="128" height="128" className={styles.logo} />
+				<h2 className={styles.title}>StartTutorial</h2>
+				<p className={styles.overview}>StartTutorial is AI-generated tutorial platform. Start with your favorite tutorial! 😄</p>
+				<div className={styles.searchContainer}>
+					<input
+						type="text"
+						placeholder="Search tutorials..."
+						value={searchTerm}
+						onChange={(e) => setSearchTerm(e.target.value)}
+						className={styles.searchInput}
+					/>
+					<SearchIcon className={styles.searchIcon} size={20} />
+				</div>
+			</header>
 			{filteredButtons.length > 0 ? (
 				<div className={styles.grid}>
 					{filteredButtons.map((button, index) => (
