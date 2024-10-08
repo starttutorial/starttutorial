@@ -34,7 +34,7 @@ export default function EmojiButtonGrid() {
 	return (
 		<div className={styles.container}>
 			<h2 className={styles.title}>StartTutorial 📚</h2>
-			<p>StartTutorial is AI-generated tutorial platform. Start with your favorite tutorial! 😄</p>
+			<p className={styles.overview}>StartTutorial is AI-generated tutorial platform. Start with your favorite tutorial! 😄</p>
 			<div className={styles.searchContainer}>
 				<input
 					type="text"
